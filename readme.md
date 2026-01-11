@@ -7,6 +7,22 @@ pip install -r requirements.txt
 ## Hig Level Design
 <img width="1146" height="611" alt="Screenshot 2026-01-11 at 11 06 27 PM" src="https://github.com/user-attachments/assets/67913470-d5e8-40c3-8856-92210a41cc57" />
 
+### ai-platform-serv
+* basically a cold-started serverless VM
+
+So when someone hits site:
+Cloudflare → Backend
+           → backend is asleep
+           → cloud provider boots it
+           → ~40–60 seconds
+           → request finally reaches LLM
+
+That’s why users see “no response” or timeouts sometimes.
+
+Your UI is fine.
+Your worker is fine.
+Your backend is just waking up.
+
 ### Cloudflare Worker
 
 Security perimeter
@@ -23,3 +39,10 @@ Handles CORS
 AI firewall
 * Your robots.txt and “no AI training” rules live here.
 * Even if someone scrapes your site, they never reach your AI API.
+
+### Future Scope for Scale
+Single backend -> Auto-scaling pool
+Cold starts	-> Always-warm replicas
+1 region ->	Multi-region
+Manual limits	-> Rate limits + quotas
+In-memory conversation	-> Redis / Postgres
