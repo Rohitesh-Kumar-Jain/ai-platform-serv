@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Virtual environments
+venv/
+.venv/
+.env/
+env/
+ENV/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# IDEs and editors
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# env files
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and databases
+*.sql
+*.sqlite3
+
+# Others
+*~
+*.swp
+
+# Node modules (if present)
+node_modules/
+
+# Ignore credentials
+secrets.json
+
+# End of file
