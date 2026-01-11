@@ -11,17 +11,16 @@ pip install -r requirements.txt
 * basically a cold-started serverless VM
 
 So when someone hits site:
+
+```
 Cloudflare → Backend
-           → backend is asleep
+           → backend is asleep   
            → cloud provider boots it
            → ~40–60 seconds
            → request finally reaches LLM
+```
 
 That’s why users see “no response” or timeouts sometimes.
-
-Your UI is fine.
-Your worker is fine.
-Your backend is just waking up.
 
 ### Cloudflare Worker
 
