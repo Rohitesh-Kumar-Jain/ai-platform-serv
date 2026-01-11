@@ -5,7 +5,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ## Hig Level Design
-<img width="1146" height="611" alt="Screenshot 2026-01-11 at 11 06 27 PM" src="https://github.com/user-attachments/assets/67913470-d5e8-40c3-8856-92210a41cc57" />
+
+<img width="1135" height="546" alt="Screenshot 2026-01-12 at 1 17 58 AM" src="https://github.com/user-attachments/assets/b922255a-e996-4ff9-9bbe-8b08db43745d" />
+
 
 ### ai-platform-serv
 * basically a cold-started serverless VM
