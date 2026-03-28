@@ -1,4 +1,4 @@
-Serving backend for: https://rohitesh-kumar-jain.github.io/Portfolio/
+Serving https://rohitesh-kumar-jain.github.io/Portfolio/
 
 python -m venv venv
 
